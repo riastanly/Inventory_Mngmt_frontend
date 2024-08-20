@@ -1,0 +1,44 @@
+/* src/components/AddItem.css */
+
+.add-item-container {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .add-item-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-item-container input {
+    margin-bottom: 10px;
+  }
+  
+  .add-item-container button {
+    background-color: #007bff;
+  }
+  
+  .add-item-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .message.success {
+    color: #28a745;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+  }
+  
+  .message.error {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+  }
+  
