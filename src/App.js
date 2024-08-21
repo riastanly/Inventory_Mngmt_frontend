@@ -1,13 +1,13 @@
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, BrowserRouter } from 'react-router-dom';
 import ItemList from './components/ItemList';
 import AddItem from './components/AddItem';
 import './App.css';  // Import CSS for styling
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter basename = "/Inventory_Mngmt_frontend">
       <div className="app-container">
         <h1>Inventory Management</h1>
         <nav className="nav">
@@ -19,7 +19,7 @@ const App = () => {
           <Route path="/add" element={<AddItem />} />
         </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 };
 
