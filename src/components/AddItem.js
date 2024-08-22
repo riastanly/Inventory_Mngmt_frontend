@@ -8,8 +8,8 @@ const AddItem = () => {
   const [name, setName] = useState('');
   const [quantity, setQuantity] = useState('');
   const [price, setPrice] = useState('');
-  const [message, setMessage] = useState('');  // State for displaying messages
-  const navigate = useNavigate();  // For navigation
+  const [message, setMessage] = useState('');  
+  const navigate = useNavigate();  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -18,14 +18,14 @@ const AddItem = () => {
       setName('');
       setQuantity('');
       setPrice('');
-      setMessage('Item added successfully!');  // Set success message
+      setMessage('Item added successfully!');  
       setTimeout(() => {
         setMessage('');
-        navigate('/');  // Redirect to the item list after adding
-      }, 2000);  // Redirect after 2 seconds
+        navigate('/');  
+      }, 2000);  
     } catch (error) {
       console.error('Failed to add item:', error);
-      setMessage('Failed to add item. Please try again.');  // Set error message
+      setMessage('Failed to add item. Please try again.');  
     }
   };
 
